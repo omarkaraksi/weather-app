@@ -1,0 +1,47 @@
+.search-button{
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    bottom: 4px;
+    height: 80%;
+    width: 120px;
+    border-radius: 30px;
+}
+.search-form{
+    position: relative;
+    width: 100%;
+    
+}
+.location-input{
+    height: 67px;
+    background-color: #1e202b;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.location-input:focus{
+    height: 67px;
+    background-color: #1e202b;
+    color: #fff;
+}
+
+.location-input::placeholder {
+    color: #fff;
+}
+
+
+.card-body, .card-header ,.weather-icon,#current-condition{ 
+    background-color: #323544;
+    color: aliceblue;
+    border-color: #1e202b;
+
+}
+#current-condition{
+    font-size: 20px;
+    color: #09c;
+}
+
+
+.custom-min-height {
+    min-height: 300px;
+}

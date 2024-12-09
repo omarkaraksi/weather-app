@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Wether App</title>
+  </head>
+  <body>
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="fetch.js"></script> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form class="mx-auto mt-5 mb-5 position-relative search-form">
+            <input
+              type="text"
+              class="form-control w-100 location-input"
+              id="location-input"
+              placeholder="Enter Location"
+            />
+            <input
+              class="postion-absolute btn btn-primary search-button"
+              id="search"
+              type="button"
+              value="find"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="forecast-section">
+      <div class="container">
+        <div class="row gx-0 forecast-row">
+          <div class="col-4">
+            <div class="forecast-card">
+              <div class="card">
+                <div class="card-header py-1 d-flex">
+                  <h6 class="card-title-left me-auto py-1" id="current-day">
+                    Featured
+                  </h6>
+                  <h6 class="card-title-right py-1" id="current-date">
+                    Featured
+                  </h6>
+                </div>
+
+                <div class="card-body d-flex justify-content-between">
+                  <h5 class="card-title me-0" id="location-name">
+                    Special title treatment
+                  </h5>
+                  <h1 class="card-text" id="current-temp">23</h1>
+                </div>
+                <div class="card-body d-flex justify-content-between">
+                  <div class="weather-icon" id="current-icon">
+                    <img
+                      src="https://openweathermap.org/img/wn/10d@2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-text px-3" id="current-condition"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="forecast-card">
+              <div class="card">
+                <div class="card-header text-center">
+                  <h6 class="card-title" id="next-day"></h6>
+                </div>
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-center"
+                    id="next-day-icon"
+                  ></h5>
+                  <div class="d-flex justify-content-center">
+                    <p class="card-text d" id="next-day-temp"></p>
+                    <p id="next-day-condition"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 m-0">
+            <div class="forecast-card">
+              <div class="card">
+                <div class="card-header text-center">
+                  <h6 class="card-title" id="after-tomorrow"></h6>
+                </div>
+                <div class="card-body">
+                  <h5
+                    class="card-title d-flex justify-content-center"
+                    id="after-tomorrow-icon"
+                  ></h5>
+                  <div class="d-flex justify-content-center">
+                    <p class="card-text d" id="after-tomorrow-temp"></p>
+                    <p id="after-tomorrow-condition"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="bootstrap.min.js"></script>
+    <script src="weather-fetch.js"></script>
+  </body>
+</html>
