@@ -55,11 +55,11 @@ async function displayWeather(location='cairo'){
     afterTomorrow.textContent = getDay(data.forecast.forecastday[2].date)
     nextDayIcon.innerHTML = `<img src="${data.forecast.forecastday[1].day.condition.icon}" alt="">`
     afterTomorrowIcon.innerHTML = `<img src="${data.forecast.forecastday[2].day.condition.icon}" alt="">`
-    nextDayTemp.textContent = data.forecast.forecastday[1].day.maxtemp_c+` °C `
-    nextDayCondition.textContent = data.forecast.forecastday[1].day.condition.text
+    nextDayTemp.innerHTML = '<h3>'+data.forecast.forecastday[1].day.maxtemp_c+' °C</h3>    '+ data.forecast.forecastday[1].day.condition.text
+    // nextDayCondition.innerHTML = ' '+ data.forecast.forecastday[1].day.condition.text
     
-    afterTomorrowTemp.textContent = data.forecast.forecastday[2].day.maxtemp_c+` °C `
-    afterTomorrowCondition.textContent = data.forecast.forecastday[2].day.condition.text
+    afterTomorrowTemp.innerHTML = '<h3>'+data.forecast.forecastday[2].day.maxtemp_c+' °C</h3>    '+ data.forecast.forecastday[2].day.condition.text
+    // afterTomorrowCondition.innerHTML = data.forecast.forecastday[2].day.condition.text
     afterTomorrowIcon.innerHTML = `<img src="${data.forecast.forecastday[2].day.condition.icon}" alt="">`
 
 }

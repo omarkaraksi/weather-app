@@ -1,3 +1,10 @@
+body{
+    background-image: url('overcast-clouds-mountain-cityscape.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .search-button{
     position: absolute;
     top: 6px;
@@ -12,6 +19,7 @@
     width: 100%;
     
 }
+
 .location-input{
     height: 67px;
     background-color: #1e202b;
